@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+}
+
+.casque-container {
+    padding-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.casque-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.element {
+    width: 32%;
+    height: 200px;
+    background: #F1F1F1;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.element:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.158);
+}
+
+.element-1 {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.element-1 img{
+    box-shadow: radial-gradient(black,black,black);
+}
+
+.shop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shop i {
+    color: #D87C49;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.shop a{
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.element-1 h3{
+    font-family: 'DM Sans Bold';
+}
+
+.element-1 p {
+    opacity: 0.6;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.shop p,
+.shop i {
+    font-weight: bolder;
+}
+
+/*second-section*/
+.baffle-container {
+    display: flex;
+    background: #D87C49;
+    padding-top: 130px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.baffle-right h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.baffle-right p {
+    font-size: 1em;
+    line-height: 1.5em;
+    opacity: 0.7;
+}
+
+.baffle-left{
+    width: 55%;
+    padding-top: 50px;
+}
+
+.baffle-right {
+    width: 45%;
+}
+
+.baffle-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baffle-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.baffle-left img {
+    width: 400px;
+    transform: scaleX(-1);
+}
+
+.baffle-right h1 {
+    width: 40%;
+    line-height: 50px;
+    color: #fff;
+}
+
+.baffle-right p {
+    width: 70%;
+    color: #fff;
+}
+
+.button-product button {
+    padding: 15px 30px;
+    border: none;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+}
+
+.button-product button:hover {
+    color: #000;
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+    font-weight: bold;
+}
+
+/*responsive*/
+@media screen and (max-width:1200px) {
+    .casque{
+        margin: 0px 30px;
+    }
+    .casque-container {
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    .casque-container img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .shop p {
+        font-size: 1em;
+    }
+
+    .element-1 h3 {
+        font-size: 18px;
+    }
+
+    .baffle-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 80px;
+    }
+ 
+    .baffle-left{
+        padding-top: 0;
+    }
+
+    .baffle-left,
+    .baffle-right {
+        width: 100%;
+    }
+
+    .baffle-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .baffle-right h1 {
+        text-align: center;
+    }
+
+    .baffle-left img {
+        width: 40%;
+    }
+
+    .button-product button{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .casque-container {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .casque-container img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .element {
+        width: 100%;
+    }
+
+    .shop p {
+        font-size: 1em;
+    }
+
+    .element-1 h3 {
+        font-size: 18px;
+    }
+
+    .baffle-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 70px 0;
+    }
+
+    .baffle-left,
+    .baffle-right {
+        width: 100%;
+    }
+
+    .baffle-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .baffle-right h1 {
+        width: 80%
+    }
+
+    .baffle-left img {
+        width: 30%;
+    }
+    .button-product button{
+        margin-bottom: 0px;
+    }
+}

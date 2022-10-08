@@ -1,0 +1,161 @@
+p{
+    color: #a8a8a8;
+    font-size: 1em !important;
+}
+
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin-top: 100px;
+    transition: 0.5s;
+}
+
+.content{
+    width: 45%;
+}
+
+.content h2{
+    font-size: 50px;
+    font-family: 'DM Sans Bold';
+}
+
+h2 span{
+    color: #D87C49;
+    font-family: 'DM Sans Bold';
+}
+
+.content p{
+    font-size: larger;
+    color: #6d6b6b;
+    line-height: 25px;
+}
+
+.about-section .img{
+    width: 50%;
+}
+
+.about-section img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footer{
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a{
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+.footer h3{
+    font-size: 28px;
+    letter-spacing: -1px;
+    padding-left: 0px;
+    margin-top: 0;
+    border-top: 5px solid #D87C49;;
+    padding-top: 40px;
+}
+
+.footer nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pg-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pg-link p{
+    font-size: 18px;
+    flex-basis: 600px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.icon-media{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.footer p:last-child{
+    padding-top: 30px;
+}
+
+
+@media only screen and (max-width:1200px){
+    .container{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .content{
+        width: 100%;
+    }
+    .about-section{
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+    .about-section div{
+        padding: 0px 50px;
+    }
+    .content h2{
+        margin-top: 0px;
+    }
+    .about-section img{
+        margin-top: 30px;
+    }
+    .footer{
+        padding: 0px 30px 20px 30px;
+    }
+    .footer nav{
+        flex-direction: column;
+        align-items: flex-start !important;
+        padding: 0px;
+    }
+    .menu a{
+        padding-left: 0px !important;
+        padding-right: 10px;
+    }
+    .pg-link p{
+        flex-basis: auto !important;
+        padding: 20px 0px;
+    }
+    .pg-link{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .icon-media{
+        padding: 0px 15px 0px 0px
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .about-section .img{
+        width: 100% !important;
+    }
+    .content h2{
+        font-size: 40px;
+    }
+}
